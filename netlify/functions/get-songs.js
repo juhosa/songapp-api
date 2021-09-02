@@ -15,6 +15,7 @@ const handler = async (event) => {
       body: JSON.stringify({ songs }),
       headers: {
         "Content-Type": "Application/JSON",
+        "Access-Control-Allow-Origin": "*",
       },
     };
   } catch (error) {
