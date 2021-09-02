@@ -3,6 +3,11 @@
   command = "# no build command"
   functions = "netlify/functions"
   publish = "."
+[[redirects]]
+  from = "/api/get-songs"
+  to = "/.netlify/functions/get-songs"
+  status = 200
+  force = true
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
